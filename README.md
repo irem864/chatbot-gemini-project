@@ -28,6 +28,11 @@ Open in your browser:
 arduino
 Kodu kopyala
 http://localhost
+
+
+
+
+
 Türkçe 🇹🇷
 📌 Proje Açıklaması
 Bu proje, Ollama tarafından desteklenen ve Nginx ile Docker container içinde yayınlanan basit bir sohbet botu uygulamasıdır.
@@ -47,20 +52,19 @@ Kolay kurulum
 🛠️ Kurulum
 Repoyu klonlayın:
 
-bash
-Kodu kopyala
-git clone https://github.com/irem864/chatbot-gemini-project.git
+bash kodu kopyalayınız:git clone https://github.com/irem864/chatbot-gemini-project.git
 cd chatbot-gemini-project
+
 Container’ları build edip çalıştırın:
 
-bash
-Kodu kopyala
-docker-compose up --build
+bash kodu kopyalayınız:docker-compose up --build
+
+
 Tarayıcıdan açın:
 
-arduino
-Kodu kopyala
-http://localhost
+arduino kodu kopyalayınız:http://localhost
+
+
 yaml
-Kodu kopyala
+Kodu kopyalayınız:
 
