@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Ollama Chatbot</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    #chatbox { border: 1px solid #ccc; padding: 10px; width: 400px; height: 300px; overflow-y: auto; }
+    #userInput { margin-top: 10px; }
+    input[type="text"] { width: 300px; padding: 5px; }
+    button { padding: 5px 10px; }
+  </style>
+</head>
+<body>
+  <h1>Merhaba! Nginx + Ollama Test</h1>
+  <div id="chatbox"></div>
+  <div id="userInput">
+    <input type="text" id="message" placeholder="Bir şey yaz...">
+    <button onclick="sendMessage()">Gönder</button>
+  </div>
+
+  <script>
+    async function sendMessage() {
+      const msg = document.getElementById("message").value;
+      if (!msg) return;
+
+      const chatbox = document.getElementById("chatbox");
+      chatbox.innerHTML += "<p><b>Sen:</b> " + msg + "</p>";
+
+      // Ollama API'ye istek at
+      const response = await fetch("http://localhost:11434/api/generate", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          model: "gemma3:1b",
+          prompt: msg,
+          stream: false
+        })
+      });
+
+      const data = await response.json();
+      chatbox.innerHTML += "<p><b>Bot:</b> " + data.response + "</p>";
+
+      document.getElementById("message").value = "";
+      chatbox.scrollTop = chatbox.scrollHeight;
+    }
+  </script>
+</body>
+</html>
+
