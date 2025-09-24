@@ -1,109 +1,66 @@
-# 🤖 Chatbot React Project
+# Chatbot Gemini Project 🤖
 
-## 🌍 English
+## English 🇬🇧
 
-This project is a simple chatbot application built with **React**, **HTML**, **CSS**, and **JavaScript**.  
-It is designed to interact with AI models (such as Ollama or custom APIs) and provide a web-based interface.
+### 📌 Project Description
+This project is a simple chatbot application powered by **Ollama** and deployed with **Nginx** inside a Docker container.  
+The chatbot can generate responses based on user input and has a web interface built with **HTML, CSS, and JavaScript**.
 
 ### 🚀 Features
-- Interactive chatbot UI
-- Easy integration with backend (API or AI models)
-- Simple and customizable frontend
+- Chatbot powered by **Ollama models**  
+- Web interface for user interaction  
+- Dockerized application  
+- Served through **Nginx container**  
+- Easy to deploy  
 
-### 🛠️ Technologies Used
-- React  
-- JavaScript (ES6+)  
-- HTML5 / CSS3  
-- Nginx (for deployment inside Docker container)
-
-### 📦 How to Run (Development)
+### 🛠️ Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/irem864/chatbot-react-project.git
-   cd chatbot-react-project
-Install dependencies:
+   git clone https://github.com/irem864/chatbot-gemini-project.git
+   cd chatbot-gemini-project
+Build and start the containers:
 
 bash
 Kodu kopyala
-npm install
-Start the development server:
+docker-compose up --build
+Open in your browser:
 
-bash
+arduino
 Kodu kopyala
-npm start
-Open http://localhost:3000 in your browser.
-
-🐳 Deployment with Docker & Nginx
-Build the React app:
-
-bash
-Kodu kopyala
-npm run build
-This creates a build/ folder.
-
-Use the provided Dockerfile with Nginx:
-
-bash
-Kodu kopyala
-docker build -t chatbot-react-project .
-docker run -d -p 8080:80 chatbot-react-project
-Visit http://localhost:8080 🎉
-
-🇹🇷 Türkçe
-Bu proje React, HTML, CSS ve JavaScript ile geliştirilmiş basit bir sohbet botu uygulamasıdır.
-AI modelleri (örneğin Ollama veya kendi API’niz) ile etkileşim kurabilir ve web tabanlı bir arayüz sunar.
+http://localhost
+Türkçe 🇹🇷
+📌 Proje Açıklaması
+Bu proje, Ollama tarafından desteklenen ve Nginx ile Docker container içinde yayınlanan basit bir sohbet botu uygulamasıdır.
+Kullanıcıdan alınan girdilere yanıt üretebilir ve HTML, CSS, JavaScript ile hazırlanmış bir web arayüzüne sahiptir.
 
 🚀 Özellikler
-Etkileşimli chatbot arayüzü
+Ollama modelleri ile çalışan chatbot
 
-Backend (API veya AI modelleri) ile kolay entegrasyon
+Kullanıcı dostu web arayüzü
 
-Basit ve özelleştirilebilir frontend
+Dockerize edilmiş uygulama
 
-🛠️ Kullanılan Teknolojiler
-React
+Nginx container üzerinden yayın
 
-JavaScript (ES6+)
+Kolay kurulum
 
-HTML5 / CSS3
-
-Nginx (Docker container içerisinde yayınlama için)
-
-📦 Çalıştırma (Geliştirme Ortamı)
-Reponun kopyasını alın:
+🛠️ Kurulum
+Repoyu klonlayın:
 
 bash
 Kodu kopyala
-git clone https://github.com/irem864/chatbot-react-project.git
-cd chatbot-react-project
-Bağımlılıkları yükleyin:
+git clone https://github.com/irem864/chatbot-gemini-project.git
+cd chatbot-gemini-project
+Container’ları build edip çalıştırın:
 
 bash
 Kodu kopyala
-npm install
-Geliştirme sunucusunu başlatın:
+docker-compose up --build
+Tarayıcıdan açın:
 
-bash
+arduino
 Kodu kopyala
-npm start
-Tarayıcınızdan http://localhost:3000 adresine gidin.
-
-🐳 Docker & Nginx ile Yayınlama
-React uygulamasını build edin:
-
-bash
-Kodu kopyala
-npm run build
-Bu işlem build/ klasörünü oluşturur.
-
-Sağlanan Dockerfile ile imaj oluşturun:
-
-bash
-Kodu kopyala
-docker build -t chatbot-react-project .
-docker run -d -p 8080:80 chatbot-react-project
-http://localhost:8080 adresinden uygulamanıza erişebilirsiniz 🎉
-
+http://localhost
 yaml
 Kodu kopyala
 
