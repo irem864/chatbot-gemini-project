@@ -1,19 +1,19 @@
-# Chatbot Gemini Project 🤖
+Chatbot Gemini Project 
 
-## English 🇬🇧
+English 🇬🇧
 
-### 📌 Project Description
+ Project Description
 This project is a simple chatbot application powered by **Ollama** and deployed with **Nginx** inside a Docker container.  
 The chatbot can generate responses based on user input and has a web interface built with **HTML, CSS, and JavaScript**.
 
-### 🚀 Features
+Features
 - Chatbot powered by **Ollama models**  
 - Web interface for user interaction  
 - Dockerized application  
 - Served through **Nginx container**  
 - Easy to deploy  
 
-### 🛠️ Installation
+ Installation
 1. Clone the repository:
    ```bash
    git clone https://github.com/irem864/chatbot-gemini-project.git
